@@ -1,0 +1,138 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001E4D;
+    min-height: 100vh;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box
+}
+
+
+.under-container {
+    min-height: 75vh;
+    width: 100%;
+    max-width: 900px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: clamp(16px, 4vw, 50px);
+    box-sizing: border-box;
+}
+
+.quiz-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.quiz-sec {
+    padding: 35px 0px 35px 0px;
+
+}
+
+.quiz-sec h2 {
+    padding: 10px 0px;
+
+}
+
+.quiz-ooptions {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 20px 0px 10px 0px;
+
+}
+
+.quiz-ooptions button {
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #FF9194;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 10;
+}
+
+.quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-score {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.footer-btn button {
+    padding: 8px 60px;
+    border: none;
+    border-radius: 4px;
+    background-color: #001E4D;
+    color: white;
+    font-size: 17px;
+    font-weight: 10;
+    margin: 20px 0px 0px 0px;
+}
+
+#restart-btn {
+    padding: 8px 45px;
+    border: none;
+    border-radius: 4px;
+    background-color: #001E4D;
+    color: white;
+    font-size: 17px;
+    font-weight: 10;
+}
+
+.quiz-ooptions button.correct {
+    background-color: #9BEABB;
+}
+
+.quiz-ooptions button.wrong {
+    background-color: #9BEABB;
+}
+
+.quiz-ooptions button:disabled {
+    opacity: 1;
+    filter: none;
+    color: black;
+    -webkit-text-fill-color: black;
+}
+
+@media (max-width: 600px) {
+    .quiz-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .under-container {
+        width: 100%;
+    }
+
+    .quiz-footer {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-score {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer-btn button{
+        margin: 0px;
+    }
+}
